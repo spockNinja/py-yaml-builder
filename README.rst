@@ -1,6 +1,9 @@
 YAML Builder
 ============
 
+.. image:: https://travis-ci.org/spockNinja/py-yaml-builder.svg?branch=master
+    :target: https://travis-ci.org/spockNinja/py-yaml-builder
+
 A simple wrapper around `PyYAML <https://https://github.com/yaml/pyyaml>`_
 for building complex YAML files.
 
