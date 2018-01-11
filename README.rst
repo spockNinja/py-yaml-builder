@@ -1,7 +1,7 @@
 YAML Builder
 ============
 
-A simple wrapper around `PyYAML<https://https://github.com/yaml/pyyaml>`_
+A simple wrapper around `PyYAML <https://https://github.com/yaml/pyyaml>`_
 for building complex YAML files.
 
 The need for this utility arose when crafting large YAML files
