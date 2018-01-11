@@ -9,7 +9,7 @@ for AWS CloudFormation. Just like code, it is cleaner and easier to reason
 about a large YAML file if it is broken up into several smaller pieces.
 
 `The source for this project is available here
-<https://github.com/spockNinja/yaml-builder>`_.
+<https://github.com/spockNinja/py-yaml-builder>`_.
 
 ----
 

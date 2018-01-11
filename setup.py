@@ -20,7 +20,7 @@ setup(
     version=version,
     description='A wrapper around PyYaml for building complex yaml files',
     long_description=long_description,
-    url='https://github.com/spockNinja/yaml-builder',
+    url='https://github.com/spockNinja/py-yaml-builder',
     author='Jacob Foster',
     packages=['yaml_builder'],
 
