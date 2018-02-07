@@ -9,6 +9,7 @@ class ComposeLoader(yaml.Loader):
 
         self.add_constructor('!include', self._include)
         self.add_constructor('!import', self._include)
+        self.add_constructor('!env', self._env_var)
 
         if 'root' in kwargs:
             self._root = kwargs['root']
@@ -21,6 +22,10 @@ class ComposeLoader(yaml.Loader):
         file_path = os.path.join(self._root, file_name)
         with open(file_path, 'r') as yaml_file:
             return yaml.load(yaml_file, Loader=ComposeLoader)
+
+    def _env_var(self, loader, node):
+        env_var = loader.construct_scalar(node)
+        return os.getenv(env_var)
 
     def _include(self, loader, node):
 
